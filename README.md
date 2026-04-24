@@ -70,6 +70,7 @@ python3 train.py
 
 ## 📁 Project Structure
 
+```
 self_pruning_nn/
 │── model.py
 │── train.py
@@ -77,7 +78,7 @@ self_pruning_nn/
 │── config.py
 │── report.md
 │── requirements.txt
-
+```
 
 ---
 
