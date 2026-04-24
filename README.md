@@ -64,7 +64,9 @@ Total Loss = Classification Loss + λ × Sparsity Loss
 
 ## ▶️ How to Run
 
+```bash
 python3 train.py
+````
 
 ---
 
@@ -99,3 +101,4 @@ GitHub: [https://github.com/devveldev-sketch](https://github.com/devveldev-sketc
 * Use Hard Concrete gates for true L0 regularization
 * Extend to CNN-based architectures
 * Apply structured pruning (channel-level pruning)
+
