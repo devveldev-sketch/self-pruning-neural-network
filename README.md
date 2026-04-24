@@ -1,4 +1,3 @@
-````markdown
 # Self-Pruning Neural Network
 
 A PyTorch implementation of a neural network that learns to prune its own weights during training using learnable gating mechanisms and sparsity regularization.
@@ -7,7 +6,7 @@ A PyTorch implementation of a neural network that learns to prune its own weight
 
 ## 🚀 Overview
 
-In real-world deployment, neural networks must be efficient in terms of memory and computation. This project implements a **self-pruning neural network** that automatically removes less important connections during training.
+In real-world deployment, neural networks must be efficient in terms of memory and computation.
 
 Instead of pruning after training, this model learns which weights are unnecessary **during training itself**.
 
@@ -19,12 +18,12 @@ Each weight is associated with a learnable gate:
 
 Pruned Weight = Weight × Sigmoid(Gate Score)
 
-The model is trained with a combined loss:
+The model is trained using:
 
 Total Loss = Classification Loss + λ × Sparsity Loss
 
-- The classification loss ensures prediction accuracy  
-- The sparsity loss encourages the network to deactivate unnecessary connections  
+- Classification loss ensures prediction accuracy  
+- Sparsity loss encourages the network to deactivate unnecessary connections  
 
 ---
 
@@ -65,15 +64,12 @@ Total Loss = Classification Loss + λ × Sparsity Loss
 
 ## ▶️ How to Run
 
-```bash
 python3 train.py
-````
 
 ---
 
 ## 📁 Project Structure
 
-```
 self_pruning_nn/
 │── model.py
 │── train.py
@@ -81,18 +77,17 @@ self_pruning_nn/
 │── config.py
 │── report.md
 │── requirements.txt
-```
+
 
 ---
 
 ## 👩‍💻 Author
 
 **Devadharshini S**
-Integrated M.Tech CSE (Business Analytics)
-VIT Chennai
+Integrated M.Tech CSE (Business Analytics), VIT Chennai
 
 * Skills: Python, R, SQL, Tableau
-* Interest: Deep Learning, Predictive Analytics, AI Applications
+* Interests: Deep Learning, Predictive Analytics, AI Applications
 
 GitHub: [https://github.com/devveldev-sketch](https://github.com/devveldev-sketch)
 
@@ -103,5 +98,3 @@ GitHub: [https://github.com/devveldev-sketch](https://github.com/devveldev-sketc
 * Use Hard Concrete gates for true L0 regularization
 * Extend to CNN-based architectures
 * Apply structured pruning (channel-level pruning)
-
-
